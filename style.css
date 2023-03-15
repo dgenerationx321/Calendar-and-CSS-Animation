@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.assignment {
+  display: grid;
+}
+
+.calendar-box {
+  max-width: 300px;
+  font-family: sans-serif;
+  text-align: center;
+  border: 2px solid black;
+  margin: 10px 10px;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 30px);
+  grid-gap: 8px;
+  justify-content: center;
+  margin: 15px;
+}
+
+.start-day {
+  grid-column-start: 3;
+}
+ul {
+  list-style: none;
+  text-align: center;
+}
+.day {
+  background: rgb(173, 171, 171);
+  font-weight: bold;
+}
+h1 {
+  text-align: center;
+  margin: 10px;
+}
+li {
+  padding: 2px;
+}
+/* Animation Assignment */
+
+p {
+  margin-left: 5rem;
+  margin-top: 30px;
+  font: 25px bolder;
+  position: relative;
+  text-shadow: 2px -1px 3px #000;
+}
+
+.text-animation {
+  color: rgb(176, 171, 171);
+  width: 50%;
+  margin: 50px 30px;
+
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+
+  display: block;
+}
+
+#real {
+  height: 50px;
+  overflow: hidden;
+}
+#real > div {
+  color: #fff;
+  padding: 7px 15px;
+  height: 45px;
+  margin-bottom: 45px;
+  position: inline-block;
+}
+
+#real div:first-child {
+  animation: move 5s linear infinite forwards;
+}
+
+#real div:first-child {
+  background: #37bf82;
+}
+
+#real div {
+  background: #46c4f1;
+}
+
+#real div:last-child {
+  background: #d81038;
+}
+
+@keyframes move {
+  0% {
+    margin-top: -270px;
+  }
+  5% {
+    margin-top: -180px;
+  }
+  35% {
+    margin-top: -180px;
+  }
+  40% {
+    margin-top: -90px;
+  }
+  65% {
+    margin-top: -90px;
+  }
+  70% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+
+/* Created By Kumar DEEPAK */
